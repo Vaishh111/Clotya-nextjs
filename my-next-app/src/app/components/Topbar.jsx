@@ -22,9 +22,9 @@ const Topbar = () => {
         </p>
       </div>
 
-      {/* White Top Bar */}
+   
       <div className="h-[40px] w-full md:flex bg-white hidden items-center justify-between px-4 lg:px-28">
-        {/* Left Section */}
+      
         <div className="flex items-center gap-3 sm:gap-5">
           <div className="flex items-center gap-1 sm:gap-2">
             <FaInstagram className="text-sm sm:text-base" />
@@ -36,7 +36,7 @@ const Topbar = () => {
           </p>
         </div>
 
-        {/* Icons & Dropdowns */}
+       
         <div className="flex items-center gap-3 sm:gap-5 text-[12px]">
           <p className="cursor-pointer">Order Tracking</p>
           <div className="relative">
