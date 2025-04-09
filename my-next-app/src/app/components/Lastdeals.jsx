@@ -33,7 +33,7 @@ const LastDeals = () => {
   return (
     <div className="py-10 px-5 sm:px-6 md:px-12 xl:px-24 bg-white">
       <h2 className="text-2xl text-center font-bold mb-2">
-        Don’t Miss The Last Deals
+        Don’t Miss The Last Deals hh
       </h2>
       <p className="text-gray-500 text-center mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
