@@ -32,12 +32,12 @@ const LastDeals = () => {
 
   return (
     <div className="py-10 px-5 sm:px-6 md:px-12 xl:px-24 bg-white">
-      <h2 className="text-2xl text-center font-bold mb-2">
-        Don’t Miss The Last Deals hh
+      <h2 className="text-3xl text-center font-bold mb-2">
+        Don’t Miss The Last Deals 
       </h2>
       <p className="text-gray-500 text-center mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        tempor incididunt ut labore et dolore magna aliqua. 
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -77,7 +77,7 @@ const LastDeals = () => {
 
               <p className="text-gray-500 text-sm mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem,
-                magnam.
+                magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ab? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, soluta!
               </p>
 
               <p className="text-sm font-medium mb-1">

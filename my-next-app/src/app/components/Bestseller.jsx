@@ -48,7 +48,7 @@ const products = [
         reviews: "1 review",
     },
     {
-        id: 1,
+        id: 5,
         image: "drip-1.webp",
         discount: "24%",
         title: "Basic Colored Sweatpants With Elastic Hems",
@@ -57,7 +57,7 @@ const products = [
         reviews: "2 reviews",
     },
     {
-        id: 2,
+        id: 6,
         image: "drip-2.webp",
         tag: "TRENDING",
         title: "Basic High-Neck Puff Jacket",
@@ -65,7 +65,7 @@ const products = [
         reviews: "1 review",
     },
     {
-        id: 3,
+        id: 7,
         image: "drip-3.webp",
         discount: "17%",
         title: "Basic Relax Fit Leggings",
@@ -74,7 +74,7 @@ const products = [
         reviews: "1 review",
     },
     {
-        id: 4,
+        id: 8,
         image: "drip-4.webp",
         discount: "14%",
         title: "Check Overshirt With Pocket Detail",
@@ -118,11 +118,14 @@ const Bestseller = () => {
                   {product.tag}
                 </span>
               )}
-              <img
-                src={product.image}
-                alt={product.title}
-                className="w-full h-96 object-cover rounded"
-              />
+              <div className="w-full h-140 overflow-hidden rounded">
+                <img
+
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <p className="text-sm text-gray-500 mt-2">{product.reviews}</p>
               <h3 className="text-lg font-semibold mt-1 flex-grow">{product.title}</h3>
               <div className="mt-auto">

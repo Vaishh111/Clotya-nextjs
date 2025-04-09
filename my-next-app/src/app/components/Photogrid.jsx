@@ -11,12 +11,12 @@ const Photogrid = () => {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-10 z-10 p-6 bg-opacity-80">
-          <p className="text-sm font-semibold text-gray-500">NEW SEASON</p>
-          <h2 className="text-2xl font-bold">Big patterns are back in fashion</h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-xl font-semibold text-gray-500">NEW SEASON</p>
+          <h2 className="sm:text-3xl  font-bold">Big patterns are back in fashion</h2>
+          <p className="text-gray-600 sm:text-2xl mt-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="#" className="text-black font-semibold mt-4 inline-block">
+          <a href="#" className="text-black text-xl font-semibold mt-4 inline-block">
             Shop Now →
           </a>
         </div>
@@ -31,10 +31,10 @@ const Photogrid = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute top-10 z-10 p-6 bg-opacity-80">
-            <p className="text-sm font-semibold text-gray-500">NEW SEASON</p>
-            <h2 className="text-xl font-bold">The latest men's trends this season</h2>
-            <p className="text-gray-600 mt-2">Don't miss the opportunity.</p>
-            <a href="#" className="text-black font-semibold mt-4 inline-block">
+            <p className="text-xl font-semibold text-gray-500">NEW SEASON</p>
+            <h2 className="text-3xl font-bold">The latest men's trends this season</h2>
+            <p className="sm:text-2xl text-gray-600 mt-2">Don't miss the opportunity.</p>
+            <a href="#" className="text-black sm:text-xl font-semibold mt-4 inline-block">
               Shop Now →
             </a>
           </div>
@@ -47,10 +47,10 @@ const Photogrid = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute top-10 z-10 p-6 bg-opacity-80">
-            <p className="text-sm font-semibold text-gray-500">NEW SEASON</p>
-            <h2 className="text-xl font-bold">Show your fashion with summer shoes</h2>
-            <p className="text-gray-600 mt-2">Don't miss the opportunity.</p>
-            <a href="#" className="text-black font-semibold mt-4 inline-block">
+            <p className="text-xl font-semibold text-gray-500">NEW SEASON</p>
+            <h2 className="text-3xl font-bold">Show your fashion with summer shoes</h2>
+            <p className="text-gray-600 sm:text-2xl mt-2">Don't miss the opportunity.</p>
+            <a href="#" className="text-black sm:text-xl font-semibold mt-4 inline-block">
               Shop Now →
             </a>
           </div>

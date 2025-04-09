@@ -2,7 +2,7 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="bg-black text-white py-10 sm:px-6 md:px-12 mt-10 xl:px-24 px-5 flex flex-col md:flex-row justify-between items-center md:items-start">
+    <div className="bg-black text-white py-10 sm:px-6 md:px-12 h-auto mt-10 xl:px-24 px-5 flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
 
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl font-semibold">
@@ -11,7 +11,7 @@ const Email = () => {
         <p className="text-white mt-5">
           We’ll email you a voucher worth £10 off your first order over £50.
         </p>
-        <div className="mt-5 flex flex-col sm:flex-row items-center sm:items-stretch">
+        <div className="mt-5 flex flex-col sm:flex-row items-center sm:items-stretch gap-3">
           <input
             type="email"
             placeholder="Enter your email address"
@@ -26,12 +26,11 @@ const Email = () => {
         </p>
       </div>
 
-
-      <div className="md:w-1/2 mt-6 md:mt-0 text-center md:text-right">
+      <div className="md:w-1/2 text-center md:text-right">
         <h2 className="text-2xl font-semibold">Need help?</h2>
         <p className="text-lg font-bold text-gray-300">(+800) 1234 5678 90</p>
         <p className="text-gray-400 mt-3">We are available 8:00am – 7:00pm</p>
-        <div className="mt-7 flex justify-center md:justify-end gap-2">
+        <div className="mt-7 flex justify-center md:justify-end gap-3">
           <img src="/app-store.png" alt="Download on the App Store" className="w-36" />
           <img src="/google-play.png" alt="Get it on Google Play" className="w-36" />
         </div>
@@ -39,6 +38,7 @@ const Email = () => {
           Shopping App: <span className="font-normal">Try our View in Your Room feature, manage registries and save payment info.</span>
         </p>
       </div>
+
     </div>
   );
 };

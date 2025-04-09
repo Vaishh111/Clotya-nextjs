@@ -101,7 +101,7 @@ const Topbar = () => {
         </button>
 
         <h2 className="text-2xl font-bold mb-6">Clotya®</h2>
-        <h3 className="font-semibold text-gray-700 mb-3">Main Menu</h3>
+        <h3 className="font-semibold text-gray-700  mb-3">Main Menu</h3>
         <ul className="space-y-3 text-lg">
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Shop ▼</li>

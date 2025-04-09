@@ -17,8 +17,8 @@ const categories = [
 const BestCategory = () => {
   return (
     <div className="w-full py-10 sm:px-6 md:px-12 mt-10 xl:px-24 px-5">
-      <h2 className="text-xl text-center font-semibold mb-4">
-        Best for your categories
+      <h2 className="text-4xl text-center font-semibold mb-7">
+        Best For Your Categories
       </h2>
       <Swiper
         modules={[Navigation]}

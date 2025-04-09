@@ -68,7 +68,8 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+          <div className="relative overflow-hidden rounded-lg shadow-lg h-[540px]">
+         
             <Swiper
               navigation={true}
               modules={[Navigation, Pagination]}
@@ -84,8 +85,12 @@ const Navbar = () => {
                 { src: "/image-3.jpg", title: "Limited Edition", text: "Don't miss out on our exclusive designs." }
               ].map((slide, index) => (
                 <SwiperSlide key={index}>
-                  <div className="relative">
-                    <img src={slide.src} alt={`Fashion ${index + 1}`} className="w-full h-auto object-cover" />
+                  <div className="relative w-full h-full">
+                    <img
+                      src={slide.src}
+                      alt={`Fashion ${index + 1}`}
+                      className="w-full h-full object-cover object-center"
+                    />
                     <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 sm:px-6 lg:px-20">
                       <h2 className="text-base sm:text-lg font-light pb-2">{slide.title}</h2>
                       <p className="text-2xl sm:text-4xl font-semibold">{slide.text}</p>
