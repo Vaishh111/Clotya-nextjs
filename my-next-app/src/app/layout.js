@@ -4,6 +4,8 @@ import Topbar from "./components/Topbar";
 import { MdNavigateBefore } from "react-icons/md";
 import Navbar from "./components/Navbar";
 
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +29,8 @@ export default function RootLayout({ children }) {
       >
         <Topbar/>
         <Navbar/>
+        
+   
         
         {children}
       </body>

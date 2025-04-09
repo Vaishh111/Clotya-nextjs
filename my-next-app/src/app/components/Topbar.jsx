@@ -14,35 +14,33 @@ const Topbar = () => {
 
   return (
     <>
-      {/* Black Announcement Bar */}
-      <div className="bg-black h-[40px]  w-full flex items-center justify-center px-4">
-        <p className="text-white text-[10px] sm:text-[12px] md:text-[13px] text-center flex items-center gap-2 sm:gap-3">
+      
+      <div className="bg-black h-10 flex items-center justify-center px-4 text-white text-xs sm:text-sm text-center">
+        <p className="flex items-center gap-2">
           SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%!
-          <span className="font-bold text-white cursor-pointer">SHOP NOW</span>
+          <span className="font-bold cursor-pointer">SHOP NOW</span>
         </p>
       </div>
 
-   
-      <div className="h-[40px] w-full md:flex bg-white hidden items-center justify-between px-4 lg:px-28">
-      
-        <div className="flex items-center gap-3 sm:gap-5">
-          <div className="flex items-center gap-1 sm:gap-2">
-            <FaInstagram className="text-sm sm:text-base" />
-            <p className="text-[10px] sm:text-[12px] md:text-[13px] font-bold">3.1M Followers</p>
+
+      <div className="hidden md:flex h-10 bg-white items-center justify-between px-4 lg:px-28 text-xs sm:text-sm">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <FaInstagram className="text-base" />
+            <p className="font-bold">3.1M Followers</p>
           </div>
-          <p className="hidden sm:flex text-black text-[10px] sm:text-[12px] md:text-[13px] items-center gap-2 sm:gap-3">
+          <p className="hidden sm:flex text-black">
             Free Shipping Worldwide for all orders over $199.
-            <span className="text-red-800 font-bold cursor-pointer">Click and Shop Now.</span>
+            <span className="text-red-800 font-bold cursor-pointer"> Click and Shop Now.</span>
           </p>
         </div>
 
-       
-        <div className="flex items-center gap-3 sm:gap-5 text-[12px]">
+        <div className="flex items-center gap-4">
           <p className="cursor-pointer">Order Tracking</p>
           <div className="relative">
             <p onClick={() => setLanguageOpen(!languageOpen)} className="cursor-pointer">English ▼</p>
             {languageOpen && (
-              <div className="absolute bg-white border z-50 shadow-md w-32 mt-2 right-0">
+              <div className="absolute bg-white border shadow-md w-32 mt-2 right-0 z-50">
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">English</p>
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">French</p>
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">Spanish</p>
@@ -52,7 +50,7 @@ const Topbar = () => {
           <div className="relative">
             <p onClick={() => setCurrencyOpen(!currencyOpen)} className="cursor-pointer">USD ▼</p>
             {currencyOpen && (
-              <div className="absolute bg-white z-50 border shadow-md w-20 mt-2 right-0">
+              <div className="absolute bg-white border shadow-md w-20 mt-2 right-0 z-50">
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">USD</p>
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">EUR</p>
                 <p className="p-2 hover:bg-gray-100 cursor-pointer">INR</p>
@@ -62,16 +60,15 @@ const Topbar = () => {
         </div>
       </div>
 
-      {/* Navigation Bar */}
-      <div className="h-[60px] w-full border  flex bg-white items-center justify-between px-4 lg:px-28">
-        <div className="flex items-center gap-3">
-          <button className="text-2xl" onClick={() => setMenuOpen(true)}>
+     
+      <div className="h-16 border flex items-center justify-between px-4 lg:px-28 bg-white">
+        <div className="flex items-center gap-4">
+          <button className="text-2xl md:hidden" onClick={() => setMenuOpen(true)}>
             <AiOutlineMenu />
           </button>
           <h1 className="text-2xl font-bold">Clotya®</h1>
         </div>
 
-        {/* Search Bar */}
         <div className="hidden md:flex flex-1 max-w-lg bg-gray-100 rounded-md overflow-hidden">
           <input
             type="text"
@@ -83,18 +80,15 @@ const Topbar = () => {
           </button>
         </div>
 
-        {/* Icons Section */}
-        <div className="flex flex-row gap-4 items-center text-2xl">
+        <div className="flex items-center gap-4 text-2xl">
           <MdOutlinePerson className="cursor-pointer" />
           <FiHeart className="cursor-pointer" />
           <FiShoppingBag className="cursor-pointer" />
         </div>
       </div>
 
-      {/* Sidebar Menu */}
-      {menuOpen && (
-        <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setMenuOpen(false)}></div>
-      )}
+     
+      {menuOpen && <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setMenuOpen(false)}></div>}
 
       <motion.div
         initial={{ x: "-100%" }}
@@ -113,23 +107,23 @@ const Topbar = () => {
           <li className="cursor-pointer">Shop ▼</li>
           <li className="cursor-pointer">Women</li>
           <li className="cursor-pointer">Men</li>
-          <li className="cursor-pointer">Outerwear</li>
+          <li className="cursor-pointer">Outerwear▼</li>
           <li className="cursor-pointer">Blog</li>
           <li className="cursor-pointer">Contact</li>
         </ul>
-     
-      <hr className="my-4 border-gray-300" />
-          <h3 className="font-semibold text-gray-700 mt-6 mb-3">Categories</h3>
-          <ul className="space-y-3 text-lg">
-            <li className="cursor-pointer">Men ▼</li>
-            <li className="cursor-pointer">Women ▼</li>
-            <li className="cursor-pointer">Kids</li>
-            <li className="cursor-pointer">Baby</li>
-            <li className="cursor-pointer flex items-center gap-2">Shoes <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full">HOT</span></li>
-          </ul>
-          </motion.div>
-    
-    
+
+        <hr className="my-4 border-gray-300" />
+        <h3 className="font-semibold text-gray-700 mt-6 mb-3">Categories</h3>
+        <ul className="space-y-3 text-lg">
+          <li className="cursor-pointer">Men ▼</li>
+          <li className="cursor-pointer">Women ▼</li>
+          <li className="cursor-pointer">Kids</li>
+          <li className="cursor-pointer">Baby</li>
+          <li className="cursor-pointer flex items-center gap-2">
+            Shoes <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full">HOT</span>
+          </li>
+        </ul>
+      </motion.div>
     </>
   );
 };
